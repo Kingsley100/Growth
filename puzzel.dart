@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          title: Text('Cryptic Symbol'),
+          title: Text('JK'),
           backgroundColor: Colors.grey[850],
         ),
         body: Stack(
