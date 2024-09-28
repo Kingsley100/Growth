@@ -48,7 +48,6 @@ class SymbolPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = 5;
 
-    // Draw the triangle
     var trianglePath = Path();
     trianglePath.moveTo(size.width / 2, 0);
     trianglePath.lineTo(0, size.height);
@@ -56,10 +55,8 @@ class SymbolPainter extends CustomPainter {
     trianglePath.close();
     canvas.drawPath(trianglePath, paint);
 
-    // Draw the circle
     canvas.drawCircle(Offset(size.width / 2, size.height / 1.5), 60, paint);
 
-    // Draw the vertical line (the inner line of the symbol)
     paint.strokeWidth = 5;
     paint.color = Colors.white;
     canvas.drawLine(
@@ -90,7 +87,6 @@ class RainbowPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final Paint paint = Paint()..style = PaintingStyle.fill;
 
-    // Draw small rainbow arcs
     List<Color> colors = [
       Colors.red,
       Colors.orange,
